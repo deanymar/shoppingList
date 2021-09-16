@@ -14,8 +14,8 @@ def btnAdd():
 
 def btnShow():
     for item in list:
-        myListBox.insert(END, item)
-
+        if item not in myListBox.get(0,END):
+            myListBox.insert(END,item)
 # ------buttons function------
 
 
